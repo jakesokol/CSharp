@@ -12,23 +12,24 @@ namespace FizzBuzz
 			Console.ReadKey();
 			for (int i = 1; i <=50;i++)
 			{
-				bool buzzWord = false;
+				//bool buzzWord = false;
 				if (i % 3 == 0)
 				{
 					Console.WriteLine("Fizz");
-					buzzWord = true;
+					//buzzWord = true;
 				}
 				if (i % 5 == 0)
                 {
 					Console.WriteLine("Buzz");
-					buzzWord= true;
+					//buzzWord= true;
 				}
 				if	(i % 3 == 0 && i % 5 == 0)
                 {
 					Console.WriteLine("FizzBuzz");
-					buzzWord=(true);
+					//buzzWord=(true);
 				}
-				if (!buzzWord)	
+				//if (buzzWord == false)
+				else	
                 {
 					Console.WriteLine(i);
                 }

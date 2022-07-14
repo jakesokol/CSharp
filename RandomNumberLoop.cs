@@ -1,5 +1,5 @@
 /*
- * This Program will generate 10 random real numbers, one at a time, between 0 and 200
+ * This Program will generate 10 random real numbers, one at a time, between 0 and 200 and then will display only the numbers that are greater than 100 and divisible by 2
  *
  */
 
@@ -14,27 +14,19 @@ namespace RandomNumberLoop
 			double randomNumber;
 			Random r = new Random();
 
-			//Generate a random number between 0-200
-			int s = r.Next(200);
-			randomNumber = s;
-			
-			//Output single random number generated this is to verify I am generating the number correctly
-			//Console.WriteLine("Generate a random number between 0 and 200, press a key");
-			//Console.ReadKey();
-			//Console.WriteLine();
-			//Console.WriteLine(randomNumber);
-			//Console.WriteLine();
-			Console.WriteLine("Generate 10 random numbers between 0 and 200, press a key");
+			//Generate a random number between 0-200 and display the numbers greater than 100 and divisible by 2
+			Console.WriteLine("This program will generate 10 random numbers between 0-200 and display all even numbers that are greater than 100");
 			Console.ReadKey();
 			Console.WriteLine();
-
-			//Output 10 random numbers one at a time
 			int i = 0;
 			while (i < 10)
 			{
-				int t = r.Next(200);
-				randomNumber = t;
-				Console.WriteLine(randomNumber);
+				int s = r.Next(200);
+				randomNumber = s;
+				if (randomNumber > 100 && randomNumber % 2 == 0)
+				{
+					Console.WriteLine(randomNumber);
+				}
 				i++;
 			}
 			Console.ReadKey();
